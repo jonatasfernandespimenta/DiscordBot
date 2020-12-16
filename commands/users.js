@@ -7,7 +7,7 @@ bot.login(TOKEN);
 
 module.exports = {
   execute() {
-    bot.on('message', msg => {
+    bot.on('message', (msg) => {
       switch (msg.content.toLowerCase()) {
         case '!ping':
           userController.pingPong(msg);
