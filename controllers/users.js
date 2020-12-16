@@ -15,8 +15,8 @@ module.exports = {
     })
     bot.on('messageReactionAdd', (reaction, user) => {
       if(reaction.emoji.name === "👍") {
-        console.log(reaction.users.id);
-        const member = reaction.users.id;
+        console.log(reaction.users);
+        const member = reaction.users;
         const role = member.guild.roles.cache.find(role => role.name === "teste");
         member.roles.add(role);
       }
