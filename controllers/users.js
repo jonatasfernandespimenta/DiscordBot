@@ -8,6 +8,6 @@ module.exports = {
     msg.reply('olá').then((res) => {
       res.react("👍");
     })
-  }
+  },
 
 }

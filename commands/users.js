@@ -6,7 +6,6 @@ const TOKEN = process.env.TOKEN;
 bot.login(TOKEN);
 
 module.exports = {
-  name: "ping",
   execute() {
     bot.on('message', msg => {
       switch (msg.content.toLowerCase()) {
